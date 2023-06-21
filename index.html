@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio || Mawuena Media</title>
+
+    <!-- css styling link -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- scriting link -->
+    <script src="script.js" defer></script>
+</head>
+
+    <header class="header">
+       <a href="#" class="logo">Mawuena Media</a>
+       <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+       </nav>
+
+       <div class="bx bx-moon" id="darkMode-icon"></div>
+       <div class="bx bx-menu" id="menu-icon"></div>
+       
+    </header>
+
+    <!-- home section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I am</h3>
+            <h1>Kwesi Kuadey</h1>
+            <p>I am a passionate and creative professional, skilled in design and development.
+                With a love for innovation, i bring ideas to life and solve complex challenges.
+                Explore my porfolio to witness transformative experiences and shape the future together.
+            </p>
+
+            <!-- social media handles -->
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+                <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                <!-- <a href="#"><i class='bx bxl-facebook'></i></a> -->
+            </div>
+            <a href="document/TechCv.docx" target="_blank" class="btn">Download CV</a>
+        </div>
+        <div class="professional-container">
+            <div class="professional-box">
+                <div class="profession" style="--i:0;">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Web Developer</h3>
+                </div>
+                <div class="profession" style="--i:1">
+                    <i class='bx bx-video-recording' ></i>
+                    <h3>Videographer</h3>
+                </div>
+                <div class="profession" style="--i:2;">
+                    <i class='bx bxs-devices' ></i>
+                    <h3>App Developer</h3>
+                </div>
+                <div class="profession" style="--i:3">
+                    <i class='bx bx-video-recording' ></i>
+                    <h3>Videographer</h3>
+                </div>
+                <div class="circle"></div>
+            </div>
+            <div class="overlay"></div>
+        </div>
+    </section>
+    <!-- About section -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/about_me.jpg" alt="Descriptive image">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Hi, I'm Here To Help Your Next Project</h3>
+            <p>
+                I am a skilled web developer, mobile app developer and vidoegrapher.
+                With Web Technologies like Html, Css, Javascript which are adept in creating user-friendly interfaces,
+                implementing functionalities amongst others, they bring life on the internet.
+                However for an intuitive mobile application powered with flutter, which can be cut across
+                both IOS and Android, not forgetting web apps, desktops application.
+                I do facilitate programming sessions, so as to pass knowledge down to others make life easy through technology,
+                so as to grow their logic capabilities.
+            </p>
+            <a href="document/TechCv.docx" target="_blank" class="btn">Download CV</a>
+        </div>
+    </section>
+    <!-- service section -->
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <img src="images/appdevelopment.jpg" alt="App Development">
+                <h3>App Development</h3>
+                <p>
+                    App Development which is user-friendly and intuitive,
+                    cuts across all platforms, is what i provide.
+                </p>
+            </div>
+            <div class="services-box">
+                <img src="images/about_me.jpg" alt="Web Development">
+                <h3>Web Development</h3>
+                <p>
+                    Web Development which is user-friendly and intuitive,
+                    with Technologies such as Html, Css, Javascript amongst other frameworks
+                    to make your ideas come to life on the internet is what i provide.
+                </p>
+            </div>
+            <div class="services-box">
+                <img src="images/videographer.jpg" alt="Videographer">
+                <h3>Videography</h3>
+                <p>
+                    Pictures and videos are memorable and i give the best of it
+                    as i capture most of the captivatiting moments as you
+                    enjoy that moment of your life.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- portfolio section design -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Projects</h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/port1.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>App Development</h4>
+                    <p>Intuitive chat app</p> 
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/port2.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>App Development</h4>
+                    <p>Automated home app</p>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/port3.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Development</h4>
+                    <p>Making ideas alive on the internet</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact section -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="#">
+           <div class="input-box">
+            <input type="text" placeholder="Full Name">
+            <input type="email" placeholder="Email">
+           </div> 
+           <div class="input-box">
+            <input type="number" placeholder="Phone number">
+            <input type="text" placeholder="Email Subject">
+           </div> 
+           <textarea cols="30" rows="10" placeholder="Enter your message"></textarea>
+           <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Mawuena Media | All Rights Reserved</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
