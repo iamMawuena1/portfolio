@@ -29,9 +29,7 @@ window.onscroll = () => {
 
     // sticky navigator
     const header = document.querySelector('.header');
-    header.classList.toggle('sticky',window.scrollY > 100);
-
-    
+    header.classList.toggle('sticky',window.scrollY > 100);  
 
    //remove menu icon nav when click
     menuIcon.classList.remove('bx-x');
@@ -39,7 +37,7 @@ window.onscroll = () => {
 };
 
 // theming
-const darModeIcon = document.querySelector('darkMode-icon');
+const darkModeIcon = document.querySelector('#darkMode-icon');
 
 darkModeIcon.onclick = () => {
     darkModeIcon.classList.toggle('bx-sun');
@@ -47,4 +45,15 @@ darkModeIcon.onclick = () => {
 
 }
 
+//  scroll reveal
+ScrollReveal({
+    // reset: true,
+    distance: '80px',
+    duration: 2000,
+    delay: 200
+});
 
+ScrollReveal().reveal('.home-content, .heading', {origin: 'top'});
+ScrollReveal().reveal('.servics-container, .portfolio-box, .contact form', {origin: 'bottom'});
+ScrollReveal().reveal('.home-content h1, .about-img img', {origin: 'left'});
+ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', {origin: 'right'});
