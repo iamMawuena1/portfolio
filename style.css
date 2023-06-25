@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +8,7 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 :root{
@@ -340,9 +342,10 @@ span{
 }
 
 .portfolio .portfolio-container{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+    display: flex;
+    /* grid-template-columns: repeat(3,1fr); */
     align-items: center;
+    justify-content: center;
     gap: 2.5rem;
 }
 .portfolio-container .portfolio-box{
@@ -634,16 +637,18 @@ span{
         width: 70vw;
         margin-top: -2rem;
     }
-    .servoces h2, .portfolio h2{
+    .services h2, .portfolio h2{
         margin-bottom: 3rem;
     }
     .porfolio .portfolio-container {
-        grid-template-columns: repeat(2,1fr);
+        /* grid-template-columns: repeat(2,1fr); */
+        flex-direction: column-reverse;
     }
 }
 @media (max-width: 617px) {
     .porfolio .professional-container {
-        grid-template-columns: 1fr;
+        /* grid-template-columns: 1fr; */
+        flex-direction: column-reverse;
     }
 }
 @media (max-width: 450px) {
